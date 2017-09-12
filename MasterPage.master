@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="pnlHeader" runat="server" HorizontalAlign="Center">
+            <h1>Scott MacDonell</h1>
+            <br />
+            <asp:HyperLink ID="hlAbout" runat="server" Text="About" NavigateUrl="~/Default.aspx"></asp:HyperLink>
+            <asp:HyperLink ID="hlContact" runat="server" Text="Contact" NavigateUrl="~/Contact.aspx"></asp:HyperLink>
+        </asp:Panel>
+
+        <asp:ContentPlaceHolder id="main" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
